@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+<title>Réaliser une calculatrice simple</title>
+</head>
+<body>
+<h1 id="header">Réaliser une calculatrice simple</h1>
+<h3 style="text-align: center;">Réaliser une calculatrice simple<br></h3>
+<h4><br></h4>
+<h4>1. Réalisation de l'interface<br></h4>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p><span>Le code HTML ci-dessous, permet de réaliser l'interface 1 à l'aide d'un tableau :</span>
+  </p><pre><span><input id="filter_generico_amdopts_fg_159212557529022" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557529022&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557529022" class="html"></span>&lt;html&gt;&nbsp;&lt;html&gt; 
+   &lt;head&gt; 
+   &lt;/head&gt; 
+   &lt;body&gt; 
+      &lt;table&gt; 
+         &lt;tr&gt; 
+            &lt;td colspan="3"&gt;&lt;input id="output"&gt;&lt;/td&gt; 
+            &lt;td&gt;&lt;button&gt;c&lt;/button&gt;&lt;/td&gt; 
+         &lt;/tr&gt; 
+         &lt;tr&gt; 
+            &lt;td&gt;&lt;button &gt;1&lt;/button&gt;&lt;/td&gt; 
+            &lt;td&gt;&lt;button &gt;2&lt;/button&gt;&lt;/td&gt; 
+            &lt;td&gt;&lt;button &gt;3&lt;/button&gt;&lt;/td&gt; 
+            &lt;td&gt;&lt;button &gt;+&lt;/button&gt;&lt;/td&gt; 
+         &lt;/tr&gt; 
+      &lt;/table&gt; 
+   &lt;/body&gt; 
+&lt;/html&gt;<br><span></code></span></pre>
+</div>
+<div style="margin-left: 30px;" class="editor-indent"><i><br></i>
+</div>
+<div style="margin-left: 30px; text-align: center;" class="editor-indent"><i><span>Interface 1</span></i>
+</div>
+<p style="text-align: center;"><span><img src="im.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="215" height="53"><br></span>
+</p>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p style="text-align: left;"><span></span>
+  </p>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p style="text-align: left;"><span><b><br></b></span>
+  </p>
+ 
+  <p style="text-align: left;"><b><span><input id="filter_generico_amdopts_fg_15921255751111" type="hidden" value="{&quot;type&quot;:&quot;iframe&quot;,&quot;height&quot;:&quot;600&quot;,&quot;id&quot;:&quot;https:\/\/trinket.io\/embed\/html\/e2bf886114?runMode=autorun&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;AUTOID&quot;:&quot;fg_15921255751111&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:19}"></input><iframe  width="100%"  height="600" src="https://trinket.io/embed/html/e2bf886114?runMode=autorun" frameborder="0" ></iframe></div></span></b>
+  </p>
+</div>
+<p style="text-align: left;"><span><br></span>
+</p>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p style="text-align: left;"><span></span>
+  </p>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <h5 style="text-align: left;"><span><b>À toi de jouer 1.1 :</b></span></h5>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <p style="text-align: left;"><span>Modifier le code HTML ci-dessous, afin d'avoir le rendu interface 2 suivant :</span>
+    </p>
+  </div>
+  <p style="text-align: center;"><span><br></span>
+  </p>
+  <p style="text-align: center;"><i><span>Interface 2</span></i>
+    <br>
+  </p>
+  <p style="text-align: center;"><span><img src="im1.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="215" height="104"><br></span>
+  </p>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p style="text-align: left;"><span><br></span>
+  </p>
+  <p style="text-align: left;"><span><br></span>
+  </p>
+  <p style="text-align: left;"><span></span>
+  </p>
+  <p id="editeur_python"><b><span><b><span></span></b><input id="filter_generico_amdopts_fg_159212557525081" type="hidden" value="{&quot;type&quot;:&quot;toggle&quot;,&quot;linktext&quot;:&quot; Afficher\/ Masquer l&#039;\u00e9diteur&quot;,&quot;AUTOID&quot;:&quot;fg_159212557525081&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:13}"></input><a href="#" id="fg_159212557525081"> Afficher/ Masquer l'éditeur</a>
+	<div id="fg_159212557525081_target" class="fg_159212557525081_target" style="display: none;">&nbsp; <b><span><a href="#editeur_python"><span><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></span></a>&nbsp;&nbsp;&nbsp;&nbsp; </span></b>
+    </span>
+    </b>
+  </p>
+  <p><a href="#editeur_python" id="editeur_python"><b><span><input id="filter_generico_amdopts_fg_15921255756579" type="hidden" value="{&quot;type&quot;:&quot;iframe&quot;,&quot;height&quot;:&quot;600&quot;,&quot;id&quot;:&quot;https:\/\/trinket.io\/embed\/html\/19d44a645f?&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;AUTOID&quot;:&quot;fg_15921255756579&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:19}"></input><iframe  width="100%"  height="600" src="https://trinket.io/embed/html/19d44a645f?" frameborder="0" ></iframe></div></span></b></a>
+  </p>
+  <br>
+  <p></p>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p style="text-align: left;"><span></span>
+  </p>
+  <h5><span>À toi de jouer 1.2 :</span></h5>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <p><span>Afficher les bordures des cellules avec l'attribut&nbsp;<strong><span class="attostylestextmarker attostylestextmarker-green">border</span>
+      </strong>, d'une valeur de "<b>1</b>", placé dans la balise <b>&lt;</b><strong>table&gt;</strong>.</span>
+    </p>
+    <p><span>Le résultat attendu :</span>
+    </p>
+  </div>
+  <p style="text-align: center;"><span><i><span>Interface 3</span>
+    </i>
+    <br>
+    </span>
+  </p>
+  <p style="text-align: center;"><span><img src="im%20%281%29.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="225" height="143"><br></span>
+  </p>
+</div>
+
+<div style="margin-left: 30px;" class="editor-indent">
+  <b><span><a href="#editeur_python" class="editeur_python"><b><span><span></span></span></b>
+  </a><a href="#editeur_python"><b><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></b></a>
+  </span>&nbsp;&nbsp;</b><a href="#editeur_python" class="editeur_python"><i><span class="" style="color: rgb(239, 69, 64);">Éditeur</span></i></a><b><br></b>
+</div>
+<div style="margin-left: 30px;" class="editor-indent"><b><span></span></b>
+  <br>
+  <p></p>
+</div>
+<h4>2. Programmation des boutons</h4>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div style="margin-left: 30px;" class="editor-indent">
+    <br>
+  </div>Insérer entre les balises&nbsp;<b>&lt;head&gt;&lt;/head&gt;</b>&nbsp;l'instruction en&nbsp;<b>javascript</b>&nbsp;de la fonction&nbsp;<b>afficher() . </b>Cette fonction permet d'afficher dans l'élément input&nbsp; matérialisé par un formulaire, une
+  valeur envoyée par&nbsp; l'élément interactif button.
+  <br>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <br>
+  </div>
+  <div><pre><span><input id="filter_generico_amdopts_fg_159212557520018" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557520018&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557520018" class="html"></span>      &lt;script&gt; 
+         <i>//fonction qui affiche la valeur</i>
+         function afficher(val) 
+         { 
+             document.getElementById("output").value+=val; 
+         } 
+      &lt;/script&gt;<span><br></span><span></code></span></pre>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <div style="margin-left: 30px;" class="editor-indent">
+      <div>
+        <p>
+          <br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>Rajouter le gestionnaire l'évènement&nbsp;<span><b><span class="attostylestextmarker attostylestextmarker-green">onclick</span>
+        </b>
+        </span>&nbsp; sur&nbsp;<span>l'élément</span>&nbsp; button du chiffre 1. L'événement saisi bouton 1, déclenche la fonction <b>afficher()</b>
+      </p>
+    </div>
+  </div>
+  <div>
+    <div><pre><input id="filter_generico_amdopts_fg_159212557511477" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557511477&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557511477" class="html">&lt;td&gt;&lt;button onclick="afficher()"&gt;1&lt;/button&gt;&lt;/td&gt;&nbsp;<br></code></pre>
+    </div>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <div style="margin-left: 30px;" class="editor-indent">
+      <div>
+        <div><span><br></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div><span style="color: rgb(85, 85, 85); font-size: 1.23rem; font-weight: 700;">À toi de jouer 2.1 :</span>
+    </div>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <div>
+      <div><span style="color: rgb(85, 85, 85); font-size: 1.23rem; font-weight: 700;"></span>
+        <br>
+      </div>
+    </div>
+    <div>
+      <p><span>À l'exception du bouton <b>c,</b> rajouter aux autres boutons l'événement <span class="attostylestextmarker attostylestextmarker-green">onclick,</span>&nbsp;afin d'afficher leurs valeurs respectives.</span>
+      </p>Le rendu doit être le suivant&nbsp;: lorsque je clique sur un bouton, sa valeur apparaît sur le formulaire d'affichage.&nbsp;<i>(Tester par vous-même)</i>
+      <br>
+    </div>
+    <br><b><input id="filter_generico_amdopts_fg_159212557527401" type="hidden" value="{&quot;type&quot;:&quot;iframe&quot;,&quot;height&quot;:&quot;200&quot;,&quot;id&quot;:&quot;https:\/\/trinket.io\/embed\/html\/792bdff3af?outputOnly=true&amp;amp;runMode=autorun&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;AUTOID&quot;:&quot;fg_159212557527401&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:19}"></input><iframe  width="100%"  height="200" src="https://trinket.io/embed/html/792bdff3af?outputOnly=true&amp;runMode=autorun" frameborder="0" ></iframe></b>
+    <br>
+    <div style="margin-left: 30px;" class="editor-indent">
+      <br>
+    </div>Insérer entre les balises <b>&lt;head&gt;&lt;/head&gt;</b> l'instruction en <b>javascript</b> de la fonction <b>effacer() </b>: Cette fonction permet d'effacer le contenu du formulaire d'affichage.
+    <br>
+    <br>
+  </div><pre style="margin-left: 30px;"><input id="filter_generico_amdopts_fg_1592125575108" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_1592125575108&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_1592125575108" class="html">      &lt;script&gt; 
+         <i>//fonction qui efface l'écran </i>
+         function effacer() 
+         { 
+             document.getElementById("output").value = "";
+         } 
+      &lt;/script&gt;
+</code><br></pre>
+  <div style="margin-left: 30px;" class="editor-indent">
+  </div>
+  <p style="margin-left: 30px;"><span style=""><a href="#editeur_python" class="editeur_python"><img src="keyboard%281%29.png" alt="Editeur Python" class="img-responsive atto_image_button_text-bottom" width="32" height="32"></a><br></span>
+  </p>
+  <p style="margin-left: 30px;"><span style=""><br></span>
+  </p>
+  <div style="margin-left: 30px;" class="editor-indent">
+  </div>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <h5><span>À toi de jouer 2.2 :</span></h5>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p style="margin-left: 30px;"></p>
+  <p></p>
+  <p style="margin-left: 30px;">Rajouter l'évènement <span class="attostylestextmarker attostylestextmarker-green">onclick</span>&nbsp; sur <b>l'élément</b>&nbsp; button c (clear).</p><pre style="margin-left: 30px;"><input id="filter_generico_amdopts_fg_159212557518159" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557518159&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557518159" class="html">&lt;td&gt;&lt;button onclick="effacer()"&gt;c&lt;/button&gt;&lt;/td&gt;&nbsp;<br></code></pre>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div style="margin-left: 30px;" class="editor-indent">
+    <p><span style=""><br></span>
+    </p>
+    <p><span style="">Le rendu doit être le suivant&nbsp;: lorsqu'on clique sur le&nbsp; bouton <b>c</b>, efface le contenu afficher dans le formulaire s'efface. <i>(Tester par vous-même)</i></span>
+    </p>
+  </div>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><input id="filter_generico_amdopts_fg_159212557519853" type="hidden" value="{&quot;type&quot;:&quot;iframe&quot;,&quot;height&quot;:&quot;200&quot;,&quot;id&quot;:&quot;https:\/\/trinket.io\/embed\/html\/3ace799795?outputOnly=true&amp;amp;runMode=autorun&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;AUTOID&quot;:&quot;fg_159212557519853&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:19}"></input><iframe  width="100%"  height="200" src="https://trinket.io/embed/html/3ace799795?outputOnly=true&amp;runMode=autorun" frameborder="0" ></iframe></span>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><br></span>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><br></span>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""></span>Insérer entre les balises&nbsp;<b>&lt;head&gt;&lt;/head&gt;</b>&nbsp;l'instruction en&nbsp;<b>javascript</b>&nbsp;de la fonction&nbsp;<b>calculer()&nbsp;</b>: Cette fonction permet de calculer les opérations saisie le contenu du
+    formulaire d'affichage.<span style=""><div><div><br></div><pre><input id="filter_generico_amdopts_fg_159212557516722" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557516722&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557516722" class="html">      &lt;script&gt; 
+         <i>//La fonction eval() permet d'évaluer du code JavaScript représenté sous forme d'une chaîne de caractères.</i>
+         function calculer() 
+         { 
+             let a = document.getElementById("output").value;
+             let b = eval(a); 
+             document.getElementById("output").value = b; 
+         } 
+      &lt;/script&gt;
+</code><br></pre></div></span>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><div><p><span><b><span><a href="#editeur_python" class="editeur_python"><b><span><span></span></span>
+    </b>
+    </a><a href="#editeur_python"><b><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></b></a>
+    </span>
+    </b>
+    </span><b> </b>
+    </p>
+  </div>
+  </span>
+  <br><span style=""><div><p><span></span>
+  </p>
+</div>
+</span>
+</div>
+<div style="margin-left: 30px;" class="editor-indent"><span style=""><div>
+  </div>
+  </span>
+</div><span style=""><div><div><h5><span>À toi de jouer 2.3 :</span>
+</h5>
+</div>
+</div>
+</span>
+<div style="margin-left: 30px;" class="editor-indent"><span style=""><div><p>Rajouter l'évènement&nbsp;<span>onclick</span>&nbsp; sur&nbsp;<b>l'élément</b>&nbsp; button c (clear).</p><pre><input id="filter_generico_amdopts_fg_159212557520237" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557520237&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557520237" class="html">&lt;td&gt;&lt;button onclick="effacer()"&gt;c&lt;/button&gt;&lt;/td&gt;&nbsp;<br></code></pre>
+</div>
+<div>
+  <div>
+    <p><span><br></span>
+    </p>
+    <p><span>Le résultat attendu : Une calculatrice simple parfaitement opérationnelle.&nbsp;<i>(Tester par vous-même)</i></span>
+    </p>
+  </div>
+</div>
+<div>
+  <div><span><input id="filter_generico_amdopts_fg_159212557515459" type="hidden" value="{&quot;type&quot;:&quot;iframe&quot;,&quot;height&quot;:&quot;200&quot;,&quot;id&quot;:&quot;https:\/\/trinket.io\/embed\/html\/d8c52571a3?outputOnly=true&amp;amp;runMode=autorun&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;AUTOID&quot;:&quot;fg_159212557515459&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:19}"></input><iframe  width="100%"  height="200" src="https://trinket.io/embed/html/d8c52571a3?outputOnly=true&amp;runMode=autorun" frameborder="0" ></iframe></span>
+  </div>
+  <div><span><br></span>
+  </div>
+  <div>
+    <span><div><p><span><b><span><a href="#editeur_python" class="editeur_python"><b><span><span></span></span>
+    </b>
+    </a><a href="#editeur_python" class="editeur_python"><b><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></b></a>
+    </span>
+    </b>
+    </span><b> </b>
+    </p>
+  </div>
+  </span>
+  <br>
+</div>
+</div>
+<br>
+</span>
+</div>
+</div><span style="color: rgb(85, 85, 85); font-size: 1.54rem; font-weight: 700;">3. Événement 'onload'</span>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p><span style="color: rgb(85, 85, 85); font-size: 1.54rem; font-weight: 700;"></span>
+  </p>
+  <hr>
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><p>Dès le chargement de la page,&nbsp; il est&nbsp; possible d'afficher un message&nbsp; dans un popup.&nbsp;</p></span>
+  </div>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><p>Pour cela, il vous suffit de rajouter l’attribut&nbsp;<span class="attostylestextmarker attostylestextmarker-green">onload</span>&nbsp;dans la balise&nbsp;<b>&lt;body&gt;.</b>
+    <br>
+    </p>
+    <p><span></span>
+    </p>
+    <div><span><span><div><div><pre><input id="filter_generico_amdopts_fg_15921255754289" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_15921255754289&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_15921255754289" class="html">onload = intro()
+</code></pre></div></div></span></span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <br>
+        </div>
+      </div>
+    </div>
+    </span>
+  </div><span style=""><h5><span>À toi de jouer 3.1 :</span>
+  </h5>
+  </span>
+  <div style="margin-left: 30px;" class="editor-indent"><span style=""><p></p><p>Faire afficher, dès le chargement de votre page, un message&nbsp;(d'introduction par exemple).&nbsp;</p><div style=""><div style=""><div style="">Le script de la fonction intro()</div><div style=""><pre style=""><input id="filter_generico_amdopts_fg_159212557529775" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557529775&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557529775" class="html">      &lt;script&gt; 
+         <i style="">//La fonction intro() affiche un message dans une boîte de dialogue</i>
+         function intro() 
+         { 
+             alert("Message d'introduction");
+         } 
+      &lt;/script&gt;
+</code><b><br></b></pre><div style=""><br></div>Type de résultat attendu dès le chargement de la page.<br><br></div><div style="text-align: center; "><img src="im%20%283%29.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="497" height="176"></div><div style="text-align: center; "><br></div></div></div><b><span><a href="#editeur_python"><b><span></span>
+    </b>
+    </a>
+    </span>
+    </b><a href="#editeur_python" class="editeur_python"><span class="editeur_python"><span><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></span></span></a>
+    <br>
+    </span>
+    <p></p>
+    <p>
+      <br>
+    </p>
+  </div>
+</div><span style="color: rgb(85, 85, 85); font-size: 1.54rem; font-weight: 700;">4. Événement 'onfocus'</span>
+<br>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p>
+    <br>
+  </p>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <p><span class="attostylestextmarker attostylestextmarker-green">onfocus</span>&nbsp;modifie la couleur d'arrière-plan d'un champ de saisie lorsqu'il obtient le focus.
+      <br>
+    </p>
+    <p>Pour cela, il vous suffit de rajouter l’attribut&nbsp;<span class="attostylestextmarker attostylestextmarker-green">onfocus</span>&nbsp;dans la balise&nbsp;<span><b>&lt;input&gt;.</b></span>
+    </p>
+    <div style=""><span style=""><span style=""><div style=""><div style=""><pre style=""><input id="filter_generico_amdopts_fg_159212557515637" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557515637&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557515637" class="html">onfocus="couleur(this)"
+</code></pre></div></div></span></span>
+    </div>
+  </div>
+  <div style="font-weight: bold;">
+    <div>
+      <div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <p><span style="color: rgb(85, 85, 85); font-size: 1.23rem; font-weight: 700;">À toi de jouer 4 .1 :</span>
+    <br>
+  </p>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <p>Modifier avec la fonction <b>couleur()</b>, en 'bleu', la couleur de l'arrière-plan du formulaire&nbsp; d'affichage des résultats&nbsp;(ou&nbsp;de saisie des opérations).&nbsp;&nbsp;</p>
+    <div>Le script de la fonction <b>couleur()</b>
+    </div>
+    <div><pre><input id="filter_generico_amdopts_fg_15921255754556" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_15921255754556&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_15921255754556" class="html">      &lt;script&gt; 
+        //fonction qui modifie la couleur de fond du formulaire
+         function <b>couleur</b>(x) {
+            x.style.background = "couleur_désirée";
+          } 
+      &lt;/script&gt;
+</code></pre>
+    </div>
+    <p><span><br></span>
+    </p>
+    <p><span>Le résultat attendu :</span>
+    </p>
+  </div>
+  <div>
+    <div>
+      <p style="text-align: center;"><span><img src="im%20%284%29.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="230" height="146"><br></span>
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-left: 30px;" class="editor-indent">
+    <b><span><a href="#editeur_python" class="editeur_python"><span class="editeur_python"><b><span><span><span><span><span><b><span><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></span></b>
+    </span>
+    </span>
+    </span>
+    </span>
+    </span>
+    </b>
+    </span>
+    </a>
+    <br>
+    </span>
+    </b>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent"><b><span> </span></b>
+    <br>
+  </div>
+</div>
+<h4><span>5. Événement touche clavier</span></h4>
+<div>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <br>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <h5><span>À toi de jouer 5.1 :</span></h5>
+  </div>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <div style="margin-left: 30px;" class="editor-indent">Dans la balise <b>&lt;input&gt;,</b> ajouter l’attribut <span><span class="attostylestextmarker attostylestextmarker-green">onkeydown</span>&nbsp; pour exécuter la fonction <b>evenement_clavier() <br></b>
+      </span>
+    </div>
+    <div style="margin-left: 30px;" class="editor-indent"><span></span> 
+      <br>
+    </div>
+    <div style="margin-left: 30px;" class="editor-indent"><pre><input id="filter_generico_amdopts_fg_159212557511802" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557511802&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557511802" class="html">      &lt;script&gt; 
+        <i>//fonction qui affiche un message si on utilise une touche clavier</i>
+        function evenement_clavier() <br>        {<br>          alert("Tu as appuyer sur une touche clavier ");<br>        }
+      &lt;/script&gt;
+</code></pre>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div style="margin-left: 30px;" class="editor-indent">
+        <div style="margin-left: 30px;" class="editor-indent">
+          <p><span><a href="#editeur_python" class="editeur_python"><span class="editeur_python"><span class="editeur_python"><span><span><b><b><span><b><span><span><span><span><span><b><span><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></span>
+            </b>
+            </span>
+            </span>
+            </span>
+            </span>
+            </span>
+            </b>
+            </span>
+            </b>
+            </b>
+            </span>
+            </span>
+            </span>
+            </span>
+            </a><a href="#editeur_python" class="editeur_python"><span class="editeur_python"><span><span><b><b><span> </span></b></b></span></span></span></a>
+            <br>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div style="margin-left: 30px;" class="editor-indent">
+        <p><span><br></span>
+        </p>
+      </div>
+      <div style="margin-left: 30px;" class="editor-indent">
+        <h5><span><span>À toi de jouer 5.2 :</span><br></span></h5>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <div style="margin-left: 30px;" class="editor-indent">
+    <div style="margin-left: 30px;" class="editor-indent">
+      <p>Modifier l'attribut du 5.1 par <span class="attostylestextmarker attostylestextmarker-green">onkeyup</span> et déduisez l'événement JavasCript induit.
+        <br>
+      </p>
+      <p></p>
+      <br>
+      <p></p>
+    </div>
+  </div>
+</div><span style="color: rgb(255, 255, 255);" class="">https://www.w3schools.com/jsref/obj_keyboardevent.as</span>
+<h4><span>6. Événement de la souris<br></span></h4>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div>
+    <div>
+      <p>
+        <br>
+      </p>
+    </div>
+    <div>
+      <h5>Tester par toi même :</h5>
+    </div>
+    <div style="margin-left: 30px;" class="editor-indent">
+      <div>Dans une des balises&nbsp; <b>&lt;bouton&gt;,</b> ajouter l’attribut <span class="attostylestextmarker attostylestextmarker-green">onmouseenter</span><span>&nbsp; pour exécuter la fonction <b>couleur_bouton1(this)<br></b></span>
+      </div>
+      <div><span></span> 
+        <br>
+      </div>
+      <div><pre><input id="filter_generico_amdopts_fg_159212557530257" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557530257&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557530257" class="html">      &lt;script&gt; 
+        //fonction qui modifie la couleur d'un bouton lorsqu'on le survol
+        function couleur_bouton1(x) <br>        {<br>          x.style.background = "#B8D7F5";<br>        }
+      &lt;/script&gt;
+</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div style="margin-left: 30px;" class="editor-indent"><a href="#editeur_python" class="editeur_python"><span class="editeur_python"><span class="editeur_python"><span class="editeur_python"><span><span><b><b><span><b><span><span><span><span><span><b><span><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></span></b></span></span></span></span></span></b></span></b></b></span></span></span></span></span></a>
+    <a href="#editeur_python" class="editeur_python"><span class="editeur_python"><span><span><b><b><span> </span>
+      </b>
+      </b>
+      </span>
+      </span>
+      </span>
+      </a>
+      <br>
+  </div>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <br>
+</div>
+<div style="margin-left: 30px;">
+  <h5><span>À toi de jouer 6.1 :</span></h5>
+  <div style="margin-left: 30px;" class="editor-indent">Rajouter au script précédent l'attribut&nbsp;<span class="attostylestextmarker attostylestextmarker-green">onmouseleave</span><span> </span><span class="attostylestextmarker-yellow attostylestextmarker attostylestextmarker-green"></span>afin que la&nbsp;
+    couleur du bouton précédent retrouve sa couleur initiale.&nbsp;
+    <br>
+    <div style="margin-left: 30px;">
+      <br>
+    </div><span><div><div><p><span>Le résultat attendu : <i>Survoler avec la souris le bouton 1</i></span>
+    </p>
+  </div>
+</div>
+</span><span><div><div><span><input id="filter_generico_amdopts_fg_159212557521951" type="hidden" value="{&quot;type&quot;:&quot;iframe&quot;,&quot;height&quot;:&quot;200&quot;,&quot;id&quot;:&quot;https:\/\/trinket.io\/embed\/html\/51b9f3cf4e?outputOnly=true&amp;amp;runMode=autorun&quot;,&quot;width&quot;:&quot;100%&quot;,&quot;AUTOID&quot;:&quot;fg_159212557521951&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:19}"></input><iframe  width="100%"  height="200" src="https://trinket.io/embed/html/51b9f3cf4e?outputOnly=true&amp;runMode=autorun" frameborder="0" ></iframe></span>
+</div>
+<div><span><br></span>
+</div>
+<div><span><div><span><span><div><div><div class="attostylesbox attostylesbox-callout attostylesbox-callout-yellow"><u>Remarque</u> : Pour déclencher plusieurs fonctions sur un seul événement onclick, la syntaxe est la suivante :</div><pre><input id="filter_generico_amdopts_fg_159212557514419" type="hidden" value="{&quot;type&quot;:&quot;codebox&quot;,&quot;language&quot;:&quot;html&quot;,&quot;allow_copy&quot;:&quot;true&quot;,&quot;AUTOID&quot;:&quot;fg_159212557514419&quot;,&quot;MOODLEPAGEID&quot;:1860,&quot;WWWROOT&quot;:&quot;https:\/\/i-sn.ovh&quot;,&quot;DATASET&quot;:false,&quot;CSSLINK&quot;:false,&quot;CSSUPLOAD&quot;:false,&quot;CSSCUSTOM&quot;:false,&quot;TEMPLATEID&quot;:3}"></input><code id="fg_159212557514419" class="html">&lt;button onclick="fonction1(); fonction2(); fonction3()"&gt;
+</code></pre></div></div></span></span>
+</div>
+</span>
+</div>
+<br>
+</div>
+<div>
+  <div><span><a href="#editeur_python"><span class="editeur_python"><span><span><span><span><b><span><img src="keyboard%281%29.png" alt="Editeur Python" width="32" height="32"></span>
+    </b>
+    </span>
+    </span>
+    </span>
+    </span>
+    </span>
+    </a>
+    <br>
+    </span>
+  </div>
+</div>
+</span>
+<br>
+</div>
+</div>
+<div style="margin-left: 30px;">
+  <p></p>
+  <p><span class="" style="color: rgb(255, 255, 255);">&lt;iframe src="https://trinket.io/embed/html/5f07af471c?runMode=autorun" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen&gt;&lt;/iframe&gt;</span>
+    <br>
+  </p>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <div style="margin-left: 30px;" class="editor-indent">
+    <div style="margin-left: 30px;" class="editor-indent">
+      <div style="margin-left: 30px;" class="editor-indent"></div>
+    </div>
+  </div>
+</div>
+<div style="margin-left: 30px;" class="editor-indent">
+  <p></p>
+</div>
+<p></p>
+</body>
+</html>
